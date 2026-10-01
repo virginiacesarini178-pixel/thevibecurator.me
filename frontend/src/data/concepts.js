@@ -1,6 +1,7 @@
 const WOOL_IMGS = {
-  hero: "https://images.unsplash.com/photo-1770795263454-2756f5d7d9b0?crop=entropy&cs=srgb&fm=jpg&q=85",
-  drape: "https://images.unsplash.com/photo-1770795945913-e9093b8e704e?crop=entropy&cs=srgb&fm=jpg&q=85",
+  hero: "https://images.unsplash.com/photo-1634120455427-d4db69777fdc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxrbml0dGVkJTIwY2FzaG1lcmUlMjB3b29sJTIwYmxhbmtldCUyMGZvbGRzfGVufDB8fHx8MTc5MDg4MTIwNHww&ixlib=rb-4.1.0&q=85",
+  drape: "https://images.unsplash.com/photo-1731863891878-8b6bb3bf277e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxidXJndW5keSUyMGtuaXQlMjB3b29sJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTA4ODEyMDR8MA&ixlib=rb-4.1.0&q=85",
+  craft: "https://images.unsplash.com/photo-1706864685919-abccadda8d0e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHxfHxidXJndW5keSUyMGtuaXQlMjB3b29sJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTA4ODEyMDR8MA&ixlib=rb-4.1.0&q=85",
   texture: "https://images.unsplash.com/photo-1643313260651-9c335822ecde?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHx3b29sJTIwY2FzaG1lcmUlMjB0ZXh0dXJlJTIwZGV0YWlsJTIwbWFjcm98ZW58MHx8fHwxNzkwODc5NzM2fDA&ixlib=rb-4.1.0&q=85",
   yarn: "https://images.unsplash.com/photo-1670764732262-331943e5af5e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHx3b29sJTIwY2FzaG1lcmUlMjB0ZXh0dXJlJTIwZGV0YWlsJTIwbWFjcm98ZW58MHx8fHwxNzkwODc5NzM2fDA&ixlib=rb-4.1.0&q=85",
   cocoon: "https://images.unsplash.com/photo-1705944601101-fdb49dbf884c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHx2ZWx2ZXQlMjBjdXJ0YWluJTIwZGFyayUyMGludGVyaW9yJTIwbW9vZHl8ZW58MHx8fHwxNzkwODc5NzQxfDA&ixlib=rb-4.1.0&q=85",
@@ -34,7 +35,7 @@ export const CONCEPTS = [
       intro:
         "How could a luxury knitwear brand turn the physical retail environment into a slower, more tactile and emotionally memorable experience? Wool & Whispers answers with a sensory cocoon rather than a conventional retail space.",
       image: WOOL_IMGS.hero,
-      imageAlt: "Draped cashmere wool fabric in warm moody light",
+      imageAlt: "Soft folds of ribbed cashmere knitwear in warm light",
     },
     sections: [
       {
@@ -51,7 +52,7 @@ export const CONCEPTS = [
       {
         type: "image",
         src: WOOL_IMGS.drape,
-        alt: "Dark draped wool textile with dramatic folds",
+        alt: "Deep burgundy chunky knit wool with visible stitches",
         caption: "The world of Wool & Whispers: low light, soft fibre, no noise",
       },
       {
@@ -67,7 +68,7 @@ export const CONCEPTS = [
           {
             title: "Tactile Immersion",
             text: "Garments are displayed on dark wood and natural hangers. Visitors are encouraged to slow down and physically experience the fibres. The materials themselves become part of the storytelling. The act of touching becomes a grounding ritual.",
-            image: WOOL_IMGS.texture,
+            image: WOOL_IMGS.craft,
           },
           {
             title: "The Sales Bridge",

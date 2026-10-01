@@ -1,122 +1,40 @@
 {
-  "brand_identity": {
-    "name": "THE VIBE CURATOR",
-    "positioning": "Experiential Design Consultancy — Theatrical & Tactile Editorial Case Studies",
-    "aesthetic_direction": "Deep burgundy moody luxury, warm candlelit ambient tones, tactile materials, slow editorial storytelling, zero corporate agency tropes",
-    "colors": {
-      "primary_burgundy_dark": "#24070A",
-      "primary_burgundy": "#3B0C11",
-      "warm_cream": "#FDFBF7",
-      "gold_accent": "#C5A059",
-      "forest_green_accent": "#1B3B2B",
-      "amber_flame": "#E89D42",
-      "dark_timber": "#1F120B"
-    },
-    "typography": {
-      "display_headline": "Limelight, display, sans-serif",
-      "editorial_serif": "Cormorant Garamond, Georgia, serif",
-      "mono_accent": "JetBrains Mono, monospace"
-    }
+  "project_name": "Wool & Whispers Case Study",
+  "theme": "Dark Luxury Sensory Knitwear Event",
+  "background_color": "#24070A",
+  "color_palette": {
+    "background": "#24070A",
+    "primary_burgundy": "#5B121B",
+    "accent_gold": "#D4AF37",
+    "cream_text": "#FDFBF7",
+    "muted_rose": "#9E5A63"
   },
   "image_urls": {
-    "bard_hero": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/S%C3%A1nchez_Coello_Royal_feast.jpg",
-        "description": "Alonso Sánchez Coello (1579) 'The Royal Feast' - Public domain 16th-century painting depicting an authentic Elizabethan/Tudor court banquet with long dining tables, period dress, and timber architecture."
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Dirck_Hals_-_Banquet_Scene_in_a_Renaissance_Hall_-_WGA11035.jpg",
-        "description": "Dirck Hals (1628) 'Banquet Scene in a Renaissance Hall' - Public domain period painting showing a grand banqueting hall feast with musicians, actors, and guests sharing a period meal."
-      }
-    ],
-    "bard_theatre": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Inside_Shakespeare%27s_Globe_Theatre%2C_London.JPG",
-        "description": "Public domain photograph of the interior thrust stage, wooden galleries, and open-air yard of Shakespeare's Globe Theatre in London."
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Imaginary_view_of_an_Elizabethan_stage.jpg",
-        "description": "Public domain illustration depicting an Elizabethan playhouse performance with actors on stage and balcony seating."
-      }
-    ],
-    "bard_table": [
-      {
-        "url": "https://images.unsplash.com/photo-1695641738244-25e5355e9a42?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Warm candlelight illuminating dark timber dining table with rustic period style vessel and dark shadows."
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1531627467965-e9c3dd19209c?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Silver pewter-like chalice and rustic bread on heavy dark timber under warm flickering candle light."
-      }
-    ],
-    "bard_candle": [
-      {
-        "url": "https://images.unsplash.com/photo-1770631813576-7cbc3dfdef3c?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Flickering taper candle glow casting warm shadows on dark timber."
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1613713375072-e0c3ff795c43?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Multiple lit taper candles on dark background providing period banqueting ambience."
-      }
-    ],
-    "bard_textile": [
-      {
-        "url": "https://images.unsplash.com/photo-1755543042263-c811664f10f7?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Intricate floral and foliage tapestry texture with deep amber, brown, and ochre woven threads."
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1702635396989-820636094313?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Antique woven textile with rich dark green and earthy forest motifs."
-      }
-    ],
-    "bard_hall": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Hampton_Court_Palace_Great_Hall_c1890.jpg",
-        "description": "Public domain historical engraving/view of Henry VIII's Great Hall at Hampton Court Palace with hammerbeam timber roof and wall tapestries."
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Henry_VIII%27s_Great_Hall_-_Hampton_Court_Palace_-_Joy_of_Museums.jpg",
-        "description": "Public domain interior photograph of the Tudor Great Hall at Hampton Court Palace showing high timber arches and long carved tables."
-      }
-    ],
-    "wool_hero": [
-      {
-        "url": "https://images.unsplash.com/photo-1770795263454-2756f5d7d9b0?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Close-up macro of dark draped wrinkled cashmere wool fabric texture with warm moody light, completely fabric-focused with NO people."
-      },
-      {
-        "url": "https://images.pexels.com/photos/5807038/pexels-photo-5807038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "description": "Detailed macro view of gray knitted woolen fabric showing rich tactile weave and folds, NO people."
-      }
-    ],
-    "wool_texture": [
-      {
-        "url": "https://images.pexels.com/photos/6634274/pexels-photo-6634274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "description": "Macro close-up of blue/gray textured wool knit showing individual loops and soft fibers."
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1707978932202-751b08324daf?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Close-up of traditional weaving loom with wooden shuttle and taut warp threads."
-      }
-    ],
-    "wool_drape": [
-      {
-        "url": "https://images.unsplash.com/photo-1770795945913-e9093b8e704e?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Rich dark draped textured wool textile in moody deep tones with dramatic folds."
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1643313260651-9c335822ecde?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "description": "Soft folded wool textile close-up showing warm light and subtle shadow lines."
-      }
-    ]
+    "wool_hero": {
+      "url": "https://images.unsplash.com/photo-1634120455427-d4db69777fdc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxrbml0dGVkJTIwY2FzaG1lcmUlMjB3b29sJTIwYmxhbmtldCUyMGZvbGRzfGVufDB8fHx8MTc5MDg4MTIwNHww&ixlib=rb-4.1.0&q=85",
+      "description": "Soft organic folds of luxury cream and camel ribbed cashmere knitwear in warm moody light with unmistakable ribbed knit structure and cashmere drape."
+    },
+    "wool_drape": {
+      "url": "https://images.unsplash.com/photo-1633972767447-5098f0322a45?crop=entropy&cs=srgb&fm=jpg&ixid=M3w0NjA1NDh8MHwxfHNlYXJjaHwzfHxjbG9zZSUyMHVwJTIwa25pdHRlZCUyMHN3ZWF0ZXIlMjB0ZXh0dXJlJTIwZGFyayUyMHdhcm18ZW58MHx8fHwxNzkwODgxMjAwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Stacked heavy-knit sweaters showing rich oatmeal and ribbed knit stitches in warm, dim ambient lighting."
+    },
+    "wool_knit_macro": {
+      "url": "https://images.unsplash.com/photo-1731863891878-8b6bb3bf277e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxidXJndW5keSUyMGtuaXQlMjB3b29sJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTA4ODEyMDR8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Extreme macro close-up of deep burgundy chunky loop knit stitches with visible yarn loops and hand-crafted texture."
+    },
+    "wool_yarn": {
+      "url": "https://images.unsplash.com/photo-1670764732262-331943e5af5e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3Mzl8MHwxfHNlYXJjaHw0fHx3b29sJTIweWFybiUyMHNrZWlucyUyMGNvenklMjB0ZXh0dXJlfGVufDB8fHx8MTc5MDg4MTIwMHww&ixlib=rb-4.1.0&q=85",
+      "description": "Close-up of natural cream wool yarn skeins showing soft twisted fibers and organic yarn strand structure."
+    },
+    "wool_cable_knit": {
+      "url": "https://images.unsplash.com/photo-1643313260651-9c335822ecde?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxjaHVua3klMjBjYWJsZSUyMGtuaXQlMjBmYWJyaWMlMjB0ZXh0dXJlfGVufDB8fHx8MTc5MDg4MTIwMHww&ixlib=rb-4.1.0&q=85",
+      "description": "Clean close-up of chunky cable knit white wool fabric with bold interlocking knit loops and prominent stitch definition."
+    },
+    "wool_craft_burgundy": {
+      "url": "https://images.unsplash.com/photo-1706864685919-abccadda8d0e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHxfHxidXJndW5keSUyMGtuaXQlMjB3b29sJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTA4ODEyMDR8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Hand-knitting process in dark burgundy yarn on needles, clearly highlighting individual V-stitch knitted rows and wool craftsmanship."
+    }
   },
-  "layout_pacing_advice": "To achieve a truly immersive editorial experience, alternate wide cinematic hero stills with intimate asymmetrical macro crops in a generous grid. Intersperse narrative text passages in Cormorant Garamond serif with full-bleed atmospheric imagery, ensuring high contrast using gold (#C5A059) and cream (#FDFBF7) typography over deep burgundy (#3B0C11) backdrops.",
-  "instructions_to_main_agent": {
-    "theme": "Editorial Case Studies for The Vibe Curator",
-    "data_testid_requirement": "All interactive elements (cards, buttons, nav links, tabs, image toggles) MUST include data-testid attributes.",
-    "component_file_type": "JavaScript (.js and .jsx files, NOT TypeScript .tsx files)"
-  },
-  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
-    "testing_attributes": "All interactive and key informational elements MUST include data-testid attribute in kebab-case."
-  }
+  "instructions_to_main_agent": "Use these exact Unsplash image URLs for the Wool & Whispers case-study page. Ensure every visual asset clearly emphasizes knitted textures, loop stitches, yarn strands, and cashmere drapes instead of flat woven fabrics.",
+  "GENERAL_UI_UX_DESIGN_GUIDELINES": "Include data-testid on all interactive elements. Ensure high contrast against #24070A dark moody background using cream text (#FDFBF7)."
 }
