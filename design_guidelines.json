@@ -1,0 +1,278 @@
+{
+  "brand_identity": {
+    "name": "THE VIBE CURATOR",
+    "founder": "Virginia Cesarini",
+    "title": "Sensory Experience Designer · Vibe Curator",
+    "core_positioning": "I design experiences people come back for.",
+    "supporting_statement": "You already have the story. I help people feel it.",
+    "question": "What does your brand feel like?",
+    "tagline": "The world's a stage, but does yours feel right?",
+    "location": "London · UK & International",
+    "email": "hello@thevibecurator.me",
+    "linkedin": "www.linkedin.com/in/thevibecurator",
+    "sectors": [
+      "fashion",
+      "beauty",
+      "fragrance",
+      "retail",
+      "books",
+      "culture",
+      "theatre",
+      "hospitality",
+      "home",
+      "lifestyle"
+    ],
+    "svg_logo_concept": "<svg viewBox='0 0 100 100' className='w-8 h-8 fill-none stroke-current' strokeWidth='1.5'><circle cx='50' cy='50' r='42' strokeOpacity='0.3'/><circle cx='50' cy='50' r='28' strokeDasharray='4 3'/><path d='M50 20 V80 M20 50 H80' strokeOpacity='0.2'/><circle cx='50' cy='50' r='6' className='fill-current'/></svg>"
+  },
+  "typography": {
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Limelight&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap",
+    "font_families": {
+      "display": "'Limelight', 'Cormorant Garamond', serif",
+      "serif_editorial": "'Cormorant Garamond', Georgia, serif",
+      "sans": "'Plus Jakarta Sans', system-ui, sans-serif"
+    },
+    "scale": {
+      "hero_title": "text-4xl sm:text-6xl lg:text-7xl font-display tracking-wide uppercase leading-none",
+      "editorial_h1": "text-3xl sm:text-5xl lg:text-6xl font-serif_editorial italic font-normal tracking-tight leading-tight",
+      "section_h2": "text-2xl sm:text-4xl lg:text-5xl font-serif_editorial font-normal tracking-tight leading-snug",
+      "sub_h3": "text-xl sm:text-2xl font-serif_editorial tracking-normal leading-normal",
+      "label": "text-xs uppercase tracking-[0.25em] font-sans font-medium text-amber-200/70",
+      "body_large": "text-lg sm:text-xl font-sans font-light leading-relaxed text-cream/90",
+      "body": "text-base font-sans font-light leading-relaxed text-cream/80",
+      "caption": "text-sm font-sans font-light text-cream/60"
+    }
+  },
+  "colors": {
+    "palette": {
+      "burgundy_deep": "#3B0C11",
+      "burgundy_vivid": "#5C131D",
+      "burgundy_dark": "#24070A",
+      "warm_cream": "#FDFBF7",
+      "warm_cream_muted": "#F4EFE6",
+      "dark_espresso": "#1A100C",
+      "espresso_surface": "#261914",
+      "gold_accent": "#C5A059",
+      "gold_accent_light": "#E2C382",
+      "velvet_red": "#7A1C26"
+    },
+    "css_variables": {
+      "--bg-primary": "#24070A",
+      "--bg-surface": "#3B0C11",
+      "--bg-card": "#261914",
+      "--text-primary": "#FDFBF7",
+      "--text-secondary": "#F4EFE6",
+      "--text-muted": "rgba(253, 251, 247, 0.6)",
+      "--accent-gold": "#C5A059",
+      "--border-subtle": "rgba(197, 160, 89, 0.2)"
+    }
+  },
+  "visual_enhancers": {
+    "texture_overlay": "repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 2px)",
+    "image_styling": "rounded-2xl border border-amber-500/15 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-700 ease-out",
+    "glass_panel": "backdrop-blur-xl bg-[#3B0C11]/80 border border-amber-200/15 shadow-2xl",
+    "gold_border_line": "h-[1px] w-full bg-gradient-to-r from-transparent via-[#C5A059]/40 to-transparent"
+  },
+  "section_blueprints": {
+    "nav": {
+      "component": "FloatingNavbar",
+      "style": "Fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-6xl backdrop-blur-xl bg-[#24070A]/80 border border-amber-200/15 rounded-full px-6 py-3 flex justify-between items-center shadow-2xl",
+      "elements": [
+        "Brand Logo (SVG Concept + 'THE VIBE CURATOR')",
+        "Editorial Nav Links: [The Question, What I Do, How I Work, Vibe Studies, Virginia]",
+        "CTA Button: 'START A CONVERSATION' (triggers smooth scroll to conversational contact section)"
+      ]
+    },
+    "section_1_hero": {
+      "id": "hero",
+      "title": "THE VIBE CURATOR",
+      "heading": "I DESIGN EXPERIENCES PEOPLE COME BACK FOR.",
+      "supporting": "You already have the story. I help people feel it.",
+      "descriptor": "Sensory Experience Designer · Vibe Curator",
+      "tagline": "The world's a stage, but does yours feel right?",
+      "layout": "Atmospheric split/hero canvas with masked line-by-line kinetic reveal on scroll/load, floating sensory texture tags, 3D ambient subtle lighting backdrop, and high-impact Limelight display typography."
+    },
+    "section_2_the_question": {
+      "id": "the-question",
+      "heading": "What does your brand feel like?",
+      "subtitle": "Six intimate questions that define the difference between a place and a destination.",
+      "questions": [
+        {"title": "01 / NOTICE", "text": "What do people notice in the first three seconds before they look at a price tag?"},
+        {"title": "02 / FEEL", "text": "What emotion hangs in the air when the door opens and the room quietens?"},
+        {"title": "03 / DO", "text": "How do guests instinctively move through your room without needing signs or prompts?"},
+        {"title": "04 / REMEMBER", "text": "Which lingering sensory trace remains in their mind three days after leaving?"},
+        {"title": "05 / STAY", "text": "What makes someone lose track of time and decide to stay for one more drink or chapter?"},
+        {"title": "06 / COME BACK", "text": "What subtle ritual forces them to return, bring a friend, and say 'you have to see this'?"}
+      ]
+    },
+    "section_3_what_i_do": {
+      "id": "what-i-do",
+      "title": "WHAT I ACTUALLY DO",
+      "heading": "I TURN BRAND WORLDS INTO EXPERIENCES PEOPLE CAN ENTER.",
+      "dimensions": [
+        {"name": "SPACE", "desc": "Volumetric flow, light direction, architectural intimacy, shadow play."},
+        {"name": "SENSES", "desc": "Bespoke olfactory signatures, tactile fabric curation, acoustic warmth."},
+        {"name": "ATMOSPHERE", "desc": "The invisible tension that gives a room its pulse, drama, and character."},
+        {"name": "JOURNEY", "desc": "Choreographed physical guest touchpoints from threshold to departure."},
+        {"name": "INTERACTION", "desc": "Human-to-human micro-rituals that turn transactions into hospitality."},
+        {"name": "MEMORY", "desc": "Tactile keepsakes, lingering scents, and emotional anchors."}
+      ],
+      "closing": "The experience people want to come back to."
+    },
+    "section_4_how_i_work": {
+      "id": "how-i-work",
+      "title": "HOW I WORK",
+      "subtitle": "Three clear progressive stages. You don't need all three — enter where your brand is.",
+      "services": [
+        {
+          "step": "01",
+          "name": "THE VIBE AUDIT",
+          "badge": "DIAGNOSE",
+          "desc": "An unannounced, deep-dive sensory walkthrough of your existing physical space or planned blueprints. Uncovering friction points, sensory disconnects, and missed emotional opportunities."
+        },
+        {
+          "step": "02",
+          "name": "THE VIBE BLUEPRINT",
+          "badge": "DEFINE",
+          "desc": "Translating brand DNA into a comprehensive sensory masterplan: lighting maps, material palettes, scent profiles, playlist direction, guest choreography, and staff interaction guides."
+        },
+        {
+          "step": "03",
+          "name": "EXPERIENCE DESIGN",
+          "badge": "DESIGN",
+          "desc": "Full creative direction and hands-on spatial execution. Working side-by-side with architects, interior fabricators, artisans, and staff to bring the physical world to life."
+        }
+      ]
+    },
+    "section_5_evidence": {
+      "id": "how-do-you-know",
+      "title": "HOW DO YOU KNOW IT WORKS?",
+      "question": "But how do you know?",
+      "layers": [
+        {"title": "What people DO", "desc": "Slower dwell times, instinctive phone-down presence, organic touch of surfaces."},
+        {"title": "What people EXPERIENCE", "desc": "A shift in mood, unprompted sighs of ease, genuine physical delight."},
+        {"title": "What the brand INTENDS", "desc": "Pure alignment between inner core philosophy and outer spatial reality."},
+        {"title": "Where they MEET", "desc": "The sweet spot where spatial design becomes unshakeable brand loyalty."}
+      ],
+      "closing_statement": "I don't measure 'vibe' with meaningless corporate surveys. I define concrete spatial and sensory signals that manifest in guest behavior."
+    },
+    "section_6_vibe_studies": {
+      "id": "vibe-studies",
+      "title": "VIBE STUDIES",
+      "subtitle": "Speculative independent conceptual exploratory studies for world-class spaces.",
+      "studies": [
+        {
+          "title": "THE PERFUMER'S SANCTUARY",
+          "sector": "Fragrance & Beauty",
+          "concept": "A darkened, sound-dampened velvet chamber where scents are experienced via warm vapor columns in sync with atmospheric lighting.",
+          "image": "https://images.unsplash.com/photo-1758225502621-9102d2856dc8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBmcmFncmFuY2UlMjByZXRhaWwlMjBpbnRlcmlvciUyMGJvdXRpcXVlJTIwYXJjaGl0ZWN0dXJlJTIwc2Vuc29yeSUyMGF0bW9zcGhlcmV8ZW58MHx8fHwxNzkwODcwMTY5fDA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "LATE NIGHT AT THE DRAMATIST",
+          "sector": "Theatre & Hospitality",
+          "concept": "An underground secret speakeasy lounge hidden behind vintage stage curtains, featuring ambient warmth, brass detailing, and curated whispers.",
+          "image": "https://images.unsplash.com/photo-1602081115720-72e5b0a254b8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsb3VuZ2UlMjBpbnRlcmlvciUyMGFyY2hpdGVjdHVyYWwlMjBsaWdodGluZ3xlbnwwfHx8fDE3ODg3NjY3ODJ8MA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "THE ARCHIVE BOOKSHOP",
+          "sector": "Books & Culture",
+          "concept": "A high-ceilinged literary haven with dark mahogany shelves, warm reading alcoves, and bespoke tea aromas.",
+          "image": "https://images.unsplash.com/photo-1650026549567-a58640a2f026?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBsb3VuZ2UlMjBpbnRlcmlvciUyMGFyY2hpdGVjdHVyYWwlMjBsaWdodGluZ3xlbnwwfHx8fDE3ODg3NjY3ODJ8MA&ixlib=rb-4.1.0&q=85"
+        }
+      ]
+    },
+    "section_7_how_i_see": {
+      "id": "how-i-see",
+      "heading": "I NOTICE WHAT OTHERS MISS.",
+      "quote": "A room is never neutral. Every light reflection, texture contrast, and acoustic reverberation is either telling your story or eroding it."
+    },
+    "section_8_virginia": {
+      "id": "the-person",
+      "title": "THE PERSON BEHIND THE VIBE",
+      "name": "Virginia Cesarini",
+      "bio": "I have spent my life obsessing over why certain places make us feel transformed while others feel instantly forgettable. Combining background in theatrical spatial design, luxury brand strategy, and sensory psychology, I founded THE VIBE CURATOR to give visionary brands a tangible physical soul.",
+      "portrait": "https://images.unsplash.com/photo-1720345174544-65637a5307bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxmYXNoaW9uJTIwbW9kZWwlMjB3b21hbiUyMGJsYXplciUyMGNoaWMlMjBlZGl0b3JpYWwlMjBzdHVkaW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODg3NjY3NjN8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "section_9_contact": {
+      "id": "contact",
+      "final_heading": "The world's a stage. But does yours feel right?",
+      "sub_heading": "BRING ME SOMETHING YOU'RE BUILDING.",
+      "cta_text": "START A CONVERSATION →",
+      "form_type": "Conversational multi-step interactive editorial form",
+      "form_fields": [
+        {"name": "name", "label": "Your Name & Brand / Space", "placeholder": "e.g. Virginia · Maison de Scent"},
+        {"name": "sector", "label": "Your Sector", "type": "select", "options": ["Fashion & Retail", "Beauty & Fragrance", "Hospitality & Lounge", "Culture & Books", "Private Residence", "Other"]},
+        {"name": "vision", "label": "What are you building or reimagining?", "type": "textarea", "placeholder": "Tell me about the physical feeling you want to create..."},
+        {"name": "email", "label": "Your Direct Email", "type": "email", "placeholder": "hello@brand.com"}
+      ],
+      "backend_endpoint": "/api/contact",
+      "success_message": "Something interesting starts here. I'll be in touch soon. London · UK & International"
+    }
+  },
+  "marquee": {
+    "text_items": [
+      "FASHION", "BEAUTY", "FRAGRANCE", "RETAIL", "BOOKS", "CULTURE", "THEATRE", "HOSPITALITY", "HOME", "LIFESTYLE"
+    ],
+    "style": "Slow editorial drift, low contrast, gold/cream serif font, gap-16 py-8 border-y border-amber-500/15 opacity-70"
+  },
+  "image_urls": [
+    {
+      "category": "portrait",
+      "description": "Virginia Cesarini editorial portrait in dark blazer",
+      "url": "https://images.unsplash.com/photo-1720345174544-65637a5307bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxmYXNoaW9uJTIwbW9kZWwlMjB3b21hbiUyMGJsYXplciUyMGNoaWMlMjBlZGl0b3JpYWwlMjBzdHVkaW8lMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODg3NjY3NjN8MA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "texture_velvet",
+      "description": "Deep burgundy velvet curtain folds with warm theatrical lighting",
+      "url": "https://images.unsplash.com/photo-1513111168953-34fc252c9279?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHx2ZWx2ZXQlMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZGFyayUyMGJ1cmd1bmR5JTIwd2FybSUyMGxpZ2h0aW5nfGVufDB8fHx8MTc5MDg3MDE3M3ww&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "vibe_study_fragrance",
+      "description": "Luxurious fragrance boutique display shelves with amber bottles",
+      "url": "https://images.unsplash.com/photo-1758225502621-9102d2856dc8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBmcmFncmFuY2UlMjByZXRhaWwlMjBpbnRlcmlvciUyMGJvdXRpcXVlJTIwYXJjaGl0ZWN0dXJlJTIwc2Vuc29yeSUyMGF0bW9zcGhlcmV8ZW58MHx8fHwxNzkwODcwMTY5fDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "vibe_study_lounge",
+      "description": "Warm lit theatrical luxury hotel lounge with fireplace and leather seating",
+      "url": "https://images.unsplash.com/photo-1602081115720-72e5b0a254b8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsb3VuZ2UlMjBpbnRlcmlvciUyMGFyY2hpdGVjdHVyYWwlMjBsaWdodGluZ3xlbnwwfHx8fDE3ODg3NjY3ODJ8MA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "vibe_study_bookshop",
+      "description": "Sophisticated library alcove with dark shelving and ambient glow",
+      "url": "https://images.unsplash.com/photo-1650026549567-a58640a2f026?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBsb3VuZ2UlMjBpbnRlcmlvciUyMGFyY2hpdGVjdHVyYWwlMjBsaWdodGluZ3xlbnwwfHx8fDE3ODg3NjY3ODJ8MA&ixlib=rb-4.1.0&q=85"
+    }
+  ],
+  "instructions_to_main_agent": {
+    "frontend": [
+      "Use React JS with Tailwind CSS, Framer Motion, Lenis for smooth scrolling, and Sonner for toasts.",
+      "Import Google Fonts 'Limelight', 'Cormorant Garamond', and 'Plus Jakarta Sans' in index.html / index.css.",
+      "Apply deep burgundy background (#24070A and #3B0C11) with rich gold accents (#C5A059) and warm cream typography (#FDFBF7).",
+      "Ensure all key interactive elements and sections contain explicit data-testid attributes (e.g. data-testid='hero-section', data-testid='contact-submit-button', data-testid='conversational-form').",
+      "Implement the Lenis smooth scroll engine for momentum scrolling throughout the site.",
+      "Build the conversational multi-step contact form that POSTs to /api/contact and displays the exact requested confirmation message on success.",
+      "Create slow editorial marquee using Framer Motion or react-fast-marquee."
+    ],
+    "backend": [
+      "Ensure FastAPI backend has a POST /api/contact endpoint that accepts JSON body {name, sector, vision, email}.",
+      "Return JSON response with success status and confirmation message."
+    ]
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Create new components that match the style and conventions of existing components when needed.",
+    "Examine existing components to understand the project's component patterns before creating new ones.",
+    "Use sonner for toasts located in /app/src/components/ui/sonner.tsx or equivalent."
+  ]
+}
