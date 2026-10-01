@@ -13,8 +13,8 @@ const WOOL_IMGS = {
 const BARD_IMGS = {
   hero: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project_2.jpg/1920px-Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project_2.jpg",
   feast: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Dirck_Hals_-_Banquet_Scene_in_a_Renaissance_Hall_-_WGA11035.jpg",
-  theatre: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Shakespeare%27s_Globe_Theatre_-_geograph.org.uk_-_765341.jpg",
-  hall: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Great_Hall%2C_Hampton_Court_Palace_-_geograph.org.uk_-_3775516.jpg",
+  theatre: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Wenceslaus-Hollar-The-second-Globe-playhouse-detail.png",
+  hall: "https://upload.wikimedia.org/wikipedia/commons/3/30/The-long-gallery-hardwick-hall-derbyshire-1811-2.jpg",
   table: "https://images.unsplash.com/photo-1695641738244-25e5355e9a42?crop=entropy&cs=srgb&fm=jpg&q=85",
   chalice: "https://images.unsplash.com/photo-1531627467965-e9c3dd19209c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxydXN0aWMlMjB0YWJsZSUyMHdpbmUlMjBicmVhZCUyMGdvYmxldHMlMjBjYW5kbGVsaXR8ZW58MHx8fHwxNzkwODc5NzQ3fDA&ixlib=rb-4.1.0&q=85",
   candles: "https://images.unsplash.com/photo-1613713375072-e0c3ff795c43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxjYW5kZWxhYnJhJTIwY2FuZGxlcyUyMGxpZ2h0aW5nJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzkwODc5NzQ3fDA&ixlib=rb-4.1.0&q=85",
@@ -208,7 +208,7 @@ export const CONCEPTS = [
       imageAlt: "The Peasant Wedding by Pieter Bruegel the Elder (1567): a banquet as Shakespeare’s company would have known it",
     },
     credits:
-      "Imagery: The Peasant Wedding (Bruegel the Elder, 1567) and Banquet Scene in a Renaissance Hall (Dirck Hals, 1628), public domain. Shakespeare’s Globe and the Great Hall at Hampton Court Palace via Wikimedia Commons, CC BY-SA 2.0.",
+      "Imagery: The Peasant Wedding (Bruegel the Elder, 1567), Banquet Scene in a Renaissance Hall (Dirck Hals, 1628), the second Globe playhouse (Hollar, 1647) and the Long Gallery at Hardwick Hall (1811). All public domain, via Wikimedia Commons.",
     sections: [
       {
         type: "editorial",
@@ -219,7 +219,7 @@ export const CONCEPTS = [
           "The Elizabethan spell, built over two hours, dissolves in moments. People leave carrying the atmosphere of the performance in their bodies, but there is nowhere for that feeling to go.",
         ],
         image: BARD_IMGS.theatre,
-        imageAlt: "Inside Shakespeare’s Globe Theatre, London",
+        imageAlt: "Wenceslaus Hollar’s 1647 sketch of the second Globe Theatre",
       },
       {
         type: "statement",
@@ -279,8 +279,7 @@ export const CONCEPTS = [
             name: "Space",
             tagline: "Beside the world of the play",
             text: "A Tudor great hall of timber and tapestry, close enough to hold the atmosphere, separate enough to gather.",
-            image: BARD_IMGS.hall,
-          },
+            image: BARD_IMGS.hall,          },
           {
             name: "Sound",
             tagline: "A gentle descent",
