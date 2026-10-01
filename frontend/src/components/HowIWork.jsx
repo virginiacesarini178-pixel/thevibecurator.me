@@ -22,7 +22,7 @@ const SERVICES = [
       "Vibe Direction",
     ],
     format: "Remote",
-    timeline: "7–10 working days",
+    timeline: "Remote · 2–3 weeks",
     bestFor:
       "Brands with an existing physical experience that want to understand what is happening before deciding what to change.",
   },
@@ -45,7 +45,7 @@ const SERVICES = [
       "Experience North Star",
     ],
     format: "Remote",
-    timeline: "10–15 working days",
+    timeline: "Remote · 3–5 weeks",
     bestFor:
       "Brands creating something new, evolving their physical presence, or needing a clear experiential direction before design begins.",
   },
@@ -67,7 +67,7 @@ const SERVICES = [
       "Implementation Priorities",
     ],
     format: "Remote",
-    timeline: "15–25 working days",
+    timeline: "Remote · 6–10 weeks",
     bestFor:
       "Brands that already know the direction and are ready to translate it into a tangible experience.",
   },
