@@ -17,7 +17,7 @@ export const Virginia = () => (
             <img
               data-testid="virginia-portrait"
               src={IMAGES.portrait}
-              alt="Virginia Cesarini — founder of The Vibe Curator"
+              alt="Virginia Cesarini, founder of The Vibe Curator"
               className="w-full h-[420px] sm:h-[560px] object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-105"
             />
             <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink/70 to-transparent p-8">

@@ -1,6 +1,6 @@
 const WOOL_IMGS = {
-  hero: "https://images.unsplash.com/photo-1680643004040-41f56672d3a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBrbml0d2VhciUyMGNhc2htZXJlJTIwbW9vZHklMjBlZGl0b3JpYWx8ZW58MHx8fHwxNzkwODc5NzM2fDA&ixlib=rb-4.1.0&q=85",
-  lounge: "https://images.unsplash.com/photo-1759229875274-bd920070ceef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBrbml0d2VhciUyMGNhc2htZXJlJTIwbW9vZHklMjBlZGl0b3JpYWx8ZW58MHx8fHwxNzkwODc5NzM2fDA&ixlib=rb-4.1.0&q=85",
+  hero: "https://images.unsplash.com/photo-1770795263454-2756f5d7d9b0?crop=entropy&cs=srgb&fm=jpg&q=85",
+  drape: "https://images.unsplash.com/photo-1770795945913-e9093b8e704e?crop=entropy&cs=srgb&fm=jpg&q=85",
   texture: "https://images.unsplash.com/photo-1643313260651-9c335822ecde?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHx3b29sJTIwY2FzaG1lcmUlMjB0ZXh0dXJlJTIwZGV0YWlsJTIwbWFjcm98ZW58MHx8fHwxNzkwODc5NzM2fDA&ixlib=rb-4.1.0&q=85",
   yarn: "https://images.unsplash.com/photo-1670764732262-331943e5af5e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHx3b29sJTIwY2FzaG1lcmUlMjB0ZXh0dXJlJTIwZGV0YWlsJTIwbWFjcm98ZW58MHx8fHwxNzkwODc5NzM2fDA&ixlib=rb-4.1.0&q=85",
   cocoon: "https://images.unsplash.com/photo-1705944601101-fdb49dbf884c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHx2ZWx2ZXQlMjBjdXJ0YWluJTIwZGFyayUyMGludGVyaW9yJTIwbW9vZHl8ZW58MHx8fHwxNzkwODc5NzQxfDA&ixlib=rb-4.1.0&q=85",
@@ -10,14 +10,14 @@ const WOOL_IMGS = {
 };
 
 const BARD_IMGS = {
-  hero: "https://images.unsplash.com/photo-1772404245181-3701c768fe06?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxjYW5kbGVsaXQlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5uZXIlMjBmZWFzdHxlbnwwfHx8fDE3OTA4Nzk3NDB8MA&ixlib=rb-4.1.0&q=85",
-  feast: "https://images.unsplash.com/photo-1770140304107-eca66896c583?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjYW5kbGVsaXQlMjBiYW5xdWV0JTIwdGFibGUlMjBkaW5uZXIlMjBmZWFzdHxlbnwwfHx8fDE3OTA4Nzk3NDB8MA&ixlib=rb-4.1.0&q=85",
-  theatre: "https://images.unsplash.com/photo-1767811556101-d4dacddc8cb6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwyfHxoZXJpdGFnZSUyMHRoZWF0cmUlMjBpbnRlcmlvciUyMHJlZCUyMHZlbHZldCUyMHN0YWdlJTIwY3VydGFpbnxlbnwwfHx8fDE3OTA4Nzk3NDB8MA&ixlib=rb-4.1.0&q=85",
-  drapes: "https://images.unsplash.com/photo-1769784123040-751bbe038003?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwzfHxoZXJpdGFnZSUyMHRoZWF0cmUlMjBpbnRlcmlvciUyMHJlZCUyMHZlbHZldCUyMHN0YWdlJTIwY3VydGFpbnxlbnwwfHx8fDE3OTA4Nzk3NDB8MA&ixlib=rb-4.1.0&q=85",
-  table: "https://images.unsplash.com/photo-1531627467965-e9c3dd19209c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxydXN0aWMlMjB0YWJsZSUyMHdpbmUlMjBicmVhZCUyMGdvYmxldHMlMjBjYW5kbGVsaXR8ZW58MHx8fHwxNzkwODc5NzQ3fDA&ixlib=rb-4.1.0&q=85",
-  bread: "https://images.unsplash.com/photo-1597062389731-cdd508d90c96?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwzfHxydXN0aWMlMjB0YWJsZSUyMHdpbmUlMjBicmVhZCUyMGdvYmxldHMlMjBjYW5kbGVsaXR8ZW58MHx8fHwxNzkwODc5NzQ3fDA&ixlib=rb-4.1.0&q=85",
+  hero: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project_2.jpg/1920px-Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project_2.jpg",
+  feast: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Dirck_Hals_-_Banquet_Scene_in_a_Renaissance_Hall_-_WGA11035.jpg",
+  theatre: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Shakespeare%27s_Globe_Theatre_-_geograph.org.uk_-_765341.jpg",
+  hall: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Great_Hall%2C_Hampton_Court_Palace_-_geograph.org.uk_-_3775516.jpg",
+  table: "https://images.unsplash.com/photo-1695641738244-25e5355e9a42?crop=entropy&cs=srgb&fm=jpg&q=85",
+  chalice: "https://images.unsplash.com/photo-1531627467965-e9c3dd19209c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxydXN0aWMlMjB0YWJsZSUyMHdpbmUlMjBicmVhZCUyMGdvYmxldHMlMjBjYW5kbGVsaXR8ZW58MHx8fHwxNzkwODc5NzQ3fDA&ixlib=rb-4.1.0&q=85",
   candles: "https://images.unsplash.com/photo-1613713375072-e0c3ff795c43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxjYW5kZWxhYnJhJTIwY2FuZGxlcyUyMGxpZ2h0aW5nJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzkwODc5NzQ3fDA&ixlib=rb-4.1.0&q=85",
-  textile: "https://images.unsplash.com/photo-1617238749996-ab4c0f9fba57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHw0fHxkcmFwZWQlMjB0YXBlc3RyeSUyMHRleHRpbGUlMjBkYXJrJTIwZmFicmljJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTA4Nzk3NDN8MA&ixlib=rb-4.1.0&q=85",
+  textile: "https://images.unsplash.com/photo-1755543042263-c811664f10f7?crop=entropy&cs=srgb&fm=jpg&q=85",
 };
 
 export const CONCEPTS = [
@@ -26,7 +26,7 @@ export const CONCEPTS = [
     number: "01",
     title: "Wool & Whispers",
     subtitle: "Luxury Knitwear Sensory Event",
-    label: "Independent Concept — Speculative Project",
+    label: "Independent Concept · Speculative Project",
     cardImage: WOOL_IMGS.yarn,
     cardText:
       "A luxury knitwear brand turns the physical retail environment into a slower, more tactile and emotionally memorable experience.",
@@ -34,7 +34,7 @@ export const CONCEPTS = [
       intro:
         "How could a luxury knitwear brand turn the physical retail environment into a slower, more tactile and emotionally memorable experience? Wool & Whispers answers with a sensory cocoon rather than a conventional retail space.",
       image: WOOL_IMGS.hero,
-      imageAlt: "Cashmere knitwear in soft dramatic light",
+      imageAlt: "Draped cashmere wool fabric in warm moody light",
     },
     sections: [
       {
@@ -46,13 +46,13 @@ export const CONCEPTS = [
         type: "principles",
         items: ["Slowness", "Authenticity", "Tactility", "Calm", "Human Presence"],
         closing:
-          "Knitwear should not simply be looked at. It should be seen, touched, smelled, heard — experienced. The physical environment becomes a sensory cocoon.",
+          "Knitwear should not simply be looked at. It should be seen, touched, smelled, heard, experienced. The physical environment becomes a sensory cocoon.",
       },
       {
         type: "image",
-        src: WOOL_IMGS.lounge,
-        alt: "Cashmere loungewear in a moody library setting",
-        caption: "The world of Wool & Whispers — low light, soft fibre, no noise",
+        src: WOOL_IMGS.drape,
+        alt: "Dark draped wool textile with dramatic folds",
+        caption: "The world of Wool & Whispers: low light, soft fibre, no noise",
       },
       {
         type: "features",
@@ -66,12 +66,12 @@ export const CONCEPTS = [
           },
           {
             title: "Tactile Immersion",
-            text: "Garments are displayed on dark wood and natural hangers. Visitors are encouraged to slow down and physically experience the fibres — the materials themselves become part of the storytelling. The act of touching becomes a grounding ritual.",
+            text: "Garments are displayed on dark wood and natural hangers. Visitors are encouraged to slow down and physically experience the fibres. The materials themselves become part of the storytelling. The act of touching becomes a grounding ritual.",
             image: WOOL_IMGS.texture,
           },
           {
             title: "The Sales Bridge",
-            text: "A discreet QR code provides a personal discount, turning the no-phone ritual into an elegant post-event opportunity. The transition to purchase feels seamless — and never disrupts the atmosphere.",
+            text: "A discreet QR code provides a personal discount, turning the no-phone ritual into an elegant post-event opportunity. The transition to purchase feels seamless, and never disrupts the atmosphere.",
             image: WOOL_IMGS.wood,
           },
           {
@@ -81,11 +81,11 @@ export const CONCEPTS = [
           },
           {
             title: "A Moment of Peace",
-            text: "Hands-on creation in a space of comfortable silence allows the brand to become associated with a tangible moment of calm and focus — moving beyond the product itself.",
+            text: "Hands-on creation in a space of comfortable silence allows the brand to become associated with a tangible moment of calm and focus, moving beyond the product itself.",
           },
           {
             title: "A Sensory Souvenir",
-            text: "Each guest leaves with an object that evokes the scent of home — a lasting reminder of the slowness and authenticity at the core of Wool & Whispers.",
+            text: "Each guest leaves with an object that evokes the scent of home: a lasting reminder of the slowness and authenticity at the core of Wool & Whispers.",
             image: WOOL_IMGS.candle,
           },
         ],
@@ -115,7 +115,7 @@ export const CONCEPTS = [
           {
             name: "Smell",
             tagline: "The Scent of Home",
-            text: "A warm, subtle layer of wax, wool and wood — the scent guests later take with them, sealed inside the object they made.",
+            text: "A warm, subtle layer of wax, wool and wood: the scent guests later take with them, sealed inside the object they made.",
             image: WOOL_IMGS.candle,
           },
           {
@@ -130,7 +130,7 @@ export const CONCEPTS = [
         eyebrow: "Strategic design",
         heading: "Not aesthetic. Strategic.",
         steps: ["Product", "Sensory Experience", "Emotional Association", "Memory", "Purchase / Return"],
-        note: "The experience is designed to make the product more tangible and more memorable — each sensory decision exists to move a guest along this chain.",
+        note: "The experience is designed to make the product more tangible and more memorable. Each sensory decision exists to move a guest along this chain.",
       },
       {
         type: "modules",
@@ -143,7 +143,7 @@ export const CONCEPTS = [
           },
           {
             title: "The Try-On Cocoon",
-            text: "The signature spatial moment of the concept — a fitting room redesigned as a cabin in the woods.",
+            text: "The signature spatial moment of the concept: a fitting room redesigned as a cabin in the woods.",
           },
           {
             title: "Sensory ROI Blueprint",
@@ -187,7 +187,7 @@ export const CONCEPTS = [
           { label: "Retention Forecast", value: "+55% repeat visit intent" },
         ],
         disclaimer:
-          "Projected impact based on sensory design research — not measured client data.",
+          "Projected impact based on sensory design research. Not measured client data.",
       },
     ],
   },
@@ -203,9 +203,11 @@ export const CONCEPTS = [
     hero: {
       intro:
         "The audience has just spent two hours inside another world. Then the lights come up. The applause fades. The spell breaks. They return to their coats. They return to 2026. They leave. The Bard’s Banquet is designed around the moment immediately after the performance.",
-      image: BARD_IMGS.feast,
-      imageAlt: "Candlelit banquet table with glassware and warm flickering light",
+      image: BARD_IMGS.hero,
+      imageAlt: "The Peasant Wedding by Pieter Bruegel the Elder (1567): a banquet as Shakespeare’s company would have known it",
     },
+    credits:
+      "Imagery: The Peasant Wedding (Bruegel the Elder, 1567) and Banquet Scene in a Renaissance Hall (Dirck Hals, 1628), public domain. Shakespeare’s Globe and the Great Hall at Hampton Court Palace via Wikimedia Commons, CC BY-SA 2.0.",
     sections: [
       {
         type: "editorial",
@@ -213,10 +215,10 @@ export const CONCEPTS = [
         heading: "The spell breaks in moments.",
         paragraphs: [
           "There is no designed transition between the world of the play and the world outside it.",
-          "The Elizabethan spell, built over two hours, dissolves in moments. People leave carrying the atmosphere of the performance in their bodies — but there is nowhere for that feeling to go.",
+          "The Elizabethan spell, built over two hours, dissolves in moments. People leave carrying the atmosphere of the performance in their bodies, but there is nowhere for that feeling to go.",
         ],
         image: BARD_IMGS.theatre,
-        imageAlt: "Heritage theatre interior with red velvet curtains",
+        imageAlt: "Inside Shakespeare’s Globe Theatre, London",
       },
       {
         type: "statement",
@@ -228,7 +230,7 @@ export const CONCEPTS = [
         eyebrow: "The vision",
         questions: [
           "What if the story didn’t end with the applause?",
-          "What if the guests who came to watch the play could become part of it — not as audience, but as people who belonged to that world?",
+          "What if the guests who came to watch the play could become part of it, not as audience, but as people who belonged to that world?",
         ],
         closing: "Not another event. A transition. A ritual. A continuation of the story.",
       },
@@ -247,7 +249,7 @@ export const CONCEPTS = [
           },
           {
             title: "The Banquet",
-            text: "A candlelit, atmospheric gathering inspired by Elizabethan hospitality — candlelight, theatrical textiles, timber, food, wine, music and scent woven into one table.",
+            text: "A candlelit, atmospheric gathering inspired by Elizabethan hospitality: candlelight, theatrical textiles, timber, food, wine, music and scent woven into one table.",
           },
           {
             title: "Belonging",
@@ -263,8 +265,8 @@ export const CONCEPTS = [
       },
       {
         type: "image",
-        src: BARD_IMGS.hero,
-        alt: "Long candlelit banquet table with tall taper candles",
+        src: BARD_IMGS.table,
+        alt: "Candlelight on a dark timber banqueting table",
         caption: "The table as storytelling medium",
       },
       {
@@ -275,8 +277,8 @@ export const CONCEPTS = [
           {
             name: "Space",
             tagline: "Beside the world of the play",
-            text: "Timber, tapestry and low ceilings of light — close enough to hold the atmosphere, separate enough to gather.",
-            image: BARD_IMGS.drapes,
+            text: "A Tudor great hall of timber and tapestry, close enough to hold the atmosphere, separate enough to gather.",
+            image: BARD_IMGS.hall,
           },
           {
             name: "Sound",
@@ -286,35 +288,35 @@ export const CONCEPTS = [
           {
             name: "Light",
             tagline: "Candlelight only",
-            text: "Low, warm illumination. No overhead glare — the eyes never have to re-adjust to the modern world all at once.",
+            text: "Low, warm illumination. No overhead glare; the eyes never have to re-adjust to the modern world all at once.",
             image: BARD_IMGS.candles,
           },
           {
             name: "Scent",
             tagline: "The world in the air",
-            text: "Beeswax, old wood, wine and spice — a quiet sensory layer that keeps the theatrical world present.",
+            text: "Beeswax, old wood, wine and spice: a quiet sensory layer that keeps the theatrical world present.",
           },
           {
             name: "Taste",
             tagline: "The banquet as story",
-            text: "Shared platters, dark bread, wine poured generously — food that belongs to the world just watched.",
-            image: BARD_IMGS.bread,
+            text: "Shared platters, dark bread, wine poured generously: food that belongs to the world just watched.",
+            image: BARD_IMGS.chalice,
           },
           {
             name: "Touch",
             tagline: "Everything invites the hand",
-            text: "Heavy textiles, worn wood, paper menus, pewter and clay — every surface within reach is tactile.",
+            text: "Heavy textiles, worn wood, paper menus, pewter and clay: every surface within reach is tactile.",
             image: BARD_IMGS.textile,
           },
           {
             name: "Ritual",
             tagline: "The final act",
-            text: "Arriving, being welcomed, sitting, sharing, eating, drinking and leaving — a sequence choreographed like a closing scene.",
+            text: "Arriving, being welcomed, sitting, sharing, eating, drinking and leaving: a sequence choreographed like a closing scene.",
           },
           {
             name: "Memory",
             tagline: "Belonging, carried home",
-            text: "The guest leaves with the feeling that the play continued a little longer — and that for one evening, they belonged inside it.",
+            text: "The guest leaves with the feeling that the play continued a little longer, and that for one evening, they belonged inside it.",
           },
         ],
       },
@@ -330,7 +332,7 @@ export const CONCEPTS = [
           "Memory",
           "Relationship with the Venue",
         ],
-        note: "The concept creates a new experiential layer around the core theatre product — not a dinner attached to a show, but a designed continuation of it.",
+        note: "The concept creates a new experiential layer around the core theatre product: not a dinner attached to a show, but a designed continuation of it.",
       },
       {
         type: "opportunities",
@@ -346,7 +348,7 @@ export const CONCEPTS = [
           "Cultural programming",
           "Partnerships",
         ],
-        note: "These are possibilities to be explored and tested — not guaranteed outcomes. No figures are claimed; the value case would be built and measured during a pilot.",
+        note: "These are possibilities to be explored and tested, not guaranteed outcomes. No figures are claimed; the value case would be built and measured during a pilot.",
       },
     ],
   },

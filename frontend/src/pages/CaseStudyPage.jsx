@@ -45,6 +45,11 @@ const CaseStudyPage = () => {
         const Block = BLOCKS[s.type];
         return Block ? <Block key={i} {...s} /> : null;
       })}
+      {concept.credits && (
+        <p className="bg-ink px-6 sm:px-10 pb-4 text-center font-sans text-[11px] font-light text-cream/35 max-w-3xl mx-auto leading-relaxed">
+          {concept.credits}
+        </p>
+      )}
       <NextConcept next={getNextConcept(slug)} />
       <ConceptCTA />
     </main>

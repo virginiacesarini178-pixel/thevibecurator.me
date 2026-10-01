@@ -20,7 +20,7 @@ export const VibeStudies = () => (
       <Reveal delay={0.18}>
         <p className="mt-8 max-w-2xl font-sans font-light text-ink/65 text-lg leading-relaxed">
           Independent concepts exploring how physical experiences can be
-          designed. Speculative studies — not client work.
+          designed. Speculative studies, not client work.
         </p>
       </Reveal>
 

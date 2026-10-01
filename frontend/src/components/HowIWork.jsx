@@ -41,7 +41,7 @@ export const HowIWork = () => (
       </Reveal>
       <Reveal delay={0.18}>
         <p className="mt-8 max-w-xl font-sans font-light text-ink/65 text-lg leading-relaxed">
-          A clear progression — diagnose, define, design. You don’t need all
+          A clear progression: diagnose, define, design. You don’t need all
           three. Each one stands alone: start where your brand is.
         </p>
       </Reveal>

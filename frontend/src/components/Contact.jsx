@@ -160,7 +160,7 @@ export const Contact = () => {
               >
                 <div className="flex items-center justify-between mb-12">
                   <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-gold/70">
-                    {String(step + 1).padStart(2, "0")} — 04
+                    {String(step + 1).padStart(2, "0")} / 04
                   </span>
                   <div className="flex gap-2">
                     {[0, 1, 2, 3].map((i) => (
@@ -204,7 +204,7 @@ export const Contact = () => {
                         value={form.about}
                         onChange={(e) => set("about", e.target.value)}
                         rows={6}
-                        placeholder="The space, the idea, the feeling you’re after — in your own words."
+                        placeholder="The space, the idea, the feeling you’re after, in your own words."
                         className="mt-8 w-full bg-ink/50 border border-goldlight/20 rounded-2xl p-6 font-sans font-light text-cream placeholder:text-cream/30 focus:outline-none focus:border-gold/60 transition-colors duration-500 resize-none"
                       />
                     </motion.div>
