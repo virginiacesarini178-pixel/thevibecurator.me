@@ -1,29 +1,6 @@
+import { Link } from "react-router-dom";
 import { Reveal, Eyebrow } from "./Reveal";
-import { IMAGES } from "../data/images";
-
-const STUDIES = [
-  {
-    title: "The Perfumer’s Sanctuary",
-    sector: "Fragrance & Beauty",
-    concept:
-      "A darkened, sound-dampened velvet chamber where scents are experienced through warm vapour columns, in sync with slowly shifting atmospheric light.",
-    img: IMAGES.fragrance,
-  },
-  {
-    title: "Late Night at the Dramatist",
-    sector: "Theatre & Hospitality",
-    concept:
-      "A hidden lounge behind stage curtains — ambient warmth, brass detailing, low light and the feeling of arriving after the show has ended.",
-    img: IMAGES.lounge,
-  },
-  {
-    title: "The Archive Bookshop",
-    sector: "Books & Culture",
-    concept:
-      "A high-ceilinged literary haven with dark shelving, warm reading alcoves and a quiet ritual of tea — designed for losing track of time.",
-    img: IMAGES.bookshop,
-  },
-];
+import { CONCEPTS } from "../data/concepts";
 
 export const VibeStudies = () => (
   <section
@@ -47,47 +24,43 @@ export const VibeStudies = () => (
         </p>
       </Reveal>
 
-      <div className="mt-24 space-y-28">
-        {STUDIES.map((s, i) => (
-          <Reveal key={s.title} delay={0.05}>
-            <article
-              data-testid={`vibe-study-${i + 1}`}
-              className={`grid lg:grid-cols-2 gap-10 lg:gap-20 items-center ${
-                i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-              }`}
+      <div className="mt-20 grid lg:grid-cols-2 gap-10">
+        {CONCEPTS.map((c, i) => (
+          <Reveal key={c.slug} delay={0.1 * i} className="h-full">
+            <Link
+              data-testid={`concept-card-${c.slug}`}
+              to={`/concepts/${c.slug}`}
+              data-cursor
+              className="group flex flex-col h-full rounded-[1.75rem] border border-ink/10 bg-creammute overflow-hidden shadow-[0_25px_60px_rgba(36,7,10,0.12)] hover:shadow-[0_35px_80px_rgba(36,7,10,0.22)] transition-shadow duration-700"
             >
-              <div
-                data-cursor
-                className="group rounded-[1.75rem] border border-ink/10 overflow-hidden shadow-[0_25px_60px_rgba(36,7,10,0.18)]"
-              >
+              <div className="overflow-hidden">
                 <img
-                  src={s.img}
-                  alt={s.title}
-                  className="w-full h-[320px] sm:h-[440px] object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
+                  src={c.cardImage}
+                  alt={c.title}
+                  className="w-full h-[280px] sm:h-[360px] object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
                 />
               </div>
-              <div>
+              <div className="p-8 sm:p-12 flex flex-col flex-1">
                 <div className="flex items-center gap-4">
-                  <span className="font-serif italic text-5xl text-wine/25">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-wine/70">
-                      {s.sector}
-                    </p>
-                    <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-ink/40 mt-1">
-                      Speculative study
-                    </p>
-                  </div>
+                  <span className="font-serif italic text-3xl text-wine/30">{c.number}</span>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.28em] text-wine/70">
+                    {c.label}
+                  </p>
                 </div>
-                <h3 className="mt-8 font-serif text-3xl sm:text-5xl leading-tight text-ink">
-                  {s.title}
+                <h3 className="mt-6 font-display uppercase text-2xl sm:text-4xl tracking-wide text-ink group-hover:text-wine transition-colors duration-700">
+                  {c.title}
                 </h3>
-                <p className="mt-6 max-w-lg font-sans font-light text-ink/70 text-base sm:text-lg leading-relaxed">
-                  {s.concept}
+                <p className="mt-3 font-serif italic text-lg sm:text-xl text-wine/80">
+                  {c.subtitle}
                 </p>
+                <p className="mt-5 font-sans font-light text-ink/65 leading-relaxed flex-1">
+                  {c.cardText}
+                </p>
+                <span className="mt-8 inline-block font-sans text-xs font-semibold uppercase tracking-[0.25em] text-wine group-hover:translate-x-2 transition-transform duration-700">
+                  Explore concept →
+                </span>
               </div>
-            </article>
+            </Link>
           </Reveal>
         ))}
       </div>

@@ -13,3 +13,8 @@ export const scrollToId = (id) => {
     el.scrollIntoView({ behavior: "smooth" });
   }
 };
+
+export const scrollToTop = () => {
+  if (lenis) lenis.scrollTo(0, { immediate: true });
+  window.scrollTo(0, 0);
+};
