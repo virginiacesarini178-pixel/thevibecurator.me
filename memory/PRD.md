@@ -30,6 +30,7 @@ Sophisticated, editorial, sensory one-page website for independent experiential 
 - Concepts flow: home cards → wool page (senses, strategy flow, impact disclaimer) → next-concept → bard page (sequence, senses, flow) → CTA back to home #contact. Direct URL load of case pages works; mobile 375 case page verified; portrait renders in Virginia section.
 
 ## Backlog
+- P2: Hover-reveal images in the What I Actually Do dimensions (SPACE/SENSES/etc.) were removed 2026-07-01 at user request ("no need"); text hover effects remain. Re-add only if user asks.
 - P0: Replace remaining stock imagery with Virginia's own project photography if/when supplied (concepts use free stock per user choice).
 - P1: Email notification to hello@thevibecurator.me on new enquiry (Resend integration).
 - P1: Small private enquiries inbox page (would need auth).
