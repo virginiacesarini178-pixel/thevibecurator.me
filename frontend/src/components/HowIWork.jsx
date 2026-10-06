@@ -10,7 +10,10 @@ const SERVICES = [
     descriptor: "Understand",
     name: "The Vibe Audit",
     tagline: "See what your experience is actually saying.",
-    desc: "A strategic investigation into how an existing physical experience is currently being lived. I look at how your brand is translated through space, senses, atmosphere and customer journey, and where the experience feels coherent, loses impact or leaves potential unexplored.",
+    desc: [
+      "A strategic investigation into how an existing physical experience is being lived.",
+      "I examine how your brand translates through space, senses, atmosphere and the customer journey, identifying what feels coherent, where the experience loses impact and where opportunities remain unexplored.",
+    ],
     receive: [
       "Experience Diagnosis",
       "Brand Experience Analysis",
@@ -21,8 +24,8 @@ const SERVICES = [
       "Priority Opportunities",
       "Vibe Direction",
     ],
-    format: "Remote",
-    timeline: "Remote · 2–3 weeks",
+    format: "Remote, using agreed documentation, visual material, available data and feedback.",
+    timeline: "Typically 2–3 weeks, depending on scope and available evidence.",
     bestFor:
       "Brands with an existing physical experience that want to understand what is happening before deciding what to change.",
   },
@@ -32,7 +35,11 @@ const SERVICES = [
     descriptor: "Define",
     name: "The Vibe Blueprint",
     tagline: "Define how your brand should be felt.",
-    desc: "A strategic foundation for creating a physical experience that feels unmistakably yours. The Vibe Blueprint translates brand identity into an experiential direction, defining the emotional territory, atmosphere, sensory language, customer journey, rituals and signature moments that should shape the experience.",
+    desc: [
+      "A strategic foundation for creating a physical experience that feels unmistakably yours.",
+      "The Vibe Blueprint translates brand identity into an experiential direction, defining the emotional territory, atmosphere, sensory language, customer journey, rituals and signature moments that should shape the experience.",
+      "It establishes the principles that will guide the design, keeping every decision connected to the brand's identity and intentions.",
+    ],
     receive: [
       "Experience Vision",
       "Emotional & Vibe Direction",
@@ -44,10 +51,10 @@ const SERVICES = [
       "Spatial & Environmental Direction",
       "Experience North Star",
     ],
-    format: "Remote",
-    timeline: "Remote · 3–5 weeks",
+    format: "Remote strategy and concept definition.",
+    timeline: "Typically 3–5 weeks, depending on scope and complexity.",
     bestFor:
-      "Brands creating something new, evolving their physical presence, or needing a clear experiential direction before design begins.",
+      "Brands creating something new, evolving their physical presence or needing a clear experiential direction before design begins.",
   },
   {
     id: "design",
@@ -55,21 +62,26 @@ const SERVICES = [
     descriptor: "Design",
     name: "Experience Design",
     tagline: "Turn the strategy into something people can actually feel.",
-    desc: "The strategy is defined. Now it becomes tangible. Experience Design translates the Vibe Blueprint into a lived physical experience, developing the concept, journey, zones, sensory touchpoints, rituals, interactions and signature moments that bring the brand world to life.",
+    desc: [
+      "The strategy is defined. Now it takes shape.",
+      "Experience Design translates the Vibe Blueprint into a tangible spatial experience, developing the concept, visitor journey, zones, sensory touchpoints, interactions and signature moments that bring the brand world to life.",
+      "The result is a developed experience concept and a clear direction for the people who will take it into technical design and production.",
+    ],
     receive: [
       "Experience Concept",
-      "Experience Journey & Zones",
+      "Experience Journey & Spatial Zones",
+      "Conceptual Spatial Experience Plan",
       "Sensory Touchpoints",
       "Interaction & Ritual Concepts",
-      "Spatial Experience Direction",
+      "Spatial & Environmental Direction",
       "Sound, Scent & Lighting Direction",
-      "Specialist Briefs",
+      "Specialist & Production Briefs",
       "Implementation Priorities",
     ],
-    format: "Remote",
-    timeline: "Remote · 6–10 weeks",
+    format: "Remote concept development and design direction, with technical specialists and production partners involved where required.",
+    timeline: "Typically 6–10 weeks for concept development, depending on scope, complexity and review stages. Technical development, production and installation are scoped separately.",
     bestFor:
-      "Brands that already know the direction and are ready to translate it into a tangible experience.",
+      "Brands with an established experiential direction that are ready to develop it into a tangible concept and prepare it for implementation.",
   },
 ];
 
@@ -96,9 +108,16 @@ const ServiceCard = ({ s, open, onToggle, index }) => (
           <p className="mt-3 font-serif italic text-xl sm:text-2xl text-wine/80">
             {s.tagline}
           </p>
-          <p className="mt-5 max-w-2xl font-sans font-light text-ink/70 text-base sm:text-lg leading-relaxed">
-            {s.desc}
-          </p>
+          <div className="mt-5 max-w-2xl space-y-4">
+            {s.desc.map((p, i) => (
+              <p
+                key={i}
+                className="font-sans font-light text-ink/70 text-base sm:text-lg leading-relaxed"
+              >
+                {p}
+              </p>
+            ))}
+          </div>
 
           <button
             data-testid={`explore-${s.id}`}
@@ -161,13 +180,17 @@ const ServiceCard = ({ s, open, onToggle, index }) => (
                         <p className="font-sans text-[10px] uppercase tracking-[0.28em] text-gold/60">
                           Format
                         </p>
-                        <p className="mt-2 font-serif italic text-xl text-cream">{s.format}</p>
+                        <p className="mt-2 font-sans font-light text-sm text-cream/85 leading-relaxed">
+                          {s.format}
+                        </p>
                       </div>
                       <div>
                         <p className="font-sans text-[10px] uppercase tracking-[0.28em] text-gold/60">
                           Timeline
                         </p>
-                        <p className="mt-2 font-serif italic text-xl text-cream">{s.timeline}</p>
+                        <p className="mt-2 font-sans font-light text-sm text-cream/85 leading-relaxed">
+                          {s.timeline}
+                        </p>
                       </div>
                       <div>
                         <p className="font-sans text-[10px] uppercase tracking-[0.28em] text-gold/60">
@@ -220,8 +243,8 @@ export const HowIWork = () => {
               <span>“How do we make it happen?”</span>
             </div>
             <p className="mt-6 max-w-xl font-sans font-light text-ink/60 text-base leading-relaxed">
-              A connected progression, not a package. Each service stands
-              alone: start where your brand is.
+              A connected progression, not a package. Each service can stand
+              alone. Start where your brand is.
             </p>
           </div>
         </Reveal>
