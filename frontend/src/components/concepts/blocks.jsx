@@ -50,17 +50,34 @@ export const CaseHero = ({ concept }) => (
   </header>
 );
 
-export const Statement = ({ eyebrow, text }) => (
+export const Statement = ({ eyebrow, text, body, note }) => (
   <section className="bg-burgundy py-28 sm:py-36">
     <div className="max-w-4xl mx-auto px-6 sm:px-10 text-center">
-      <Reveal>
-        <Eyebrow>{eyebrow}</Eyebrow>
-      </Reveal>
+      {eyebrow && (
+        <Reveal>
+          <Eyebrow>{eyebrow}</Eyebrow>
+        </Reveal>
+      )}
       <Reveal delay={0.1}>
         <p className="mt-8 font-serif italic font-light text-2xl sm:text-4xl lg:text-[2.75rem] text-cream leading-relaxed">
           {text}
         </p>
       </Reveal>
+      {body &&
+        body.map((p, i) => (
+          <Reveal key={i} delay={0.18 + 0.08 * i}>
+            <p className="mt-8 max-w-2xl mx-auto font-sans font-light text-cream/70 text-base sm:text-lg leading-relaxed">
+              {p}
+            </p>
+          </Reveal>
+        ))}
+      {note && (
+        <Reveal delay={0.3}>
+          <p className="mt-12 font-sans text-[11px] uppercase tracking-[0.3em] text-gold/60">
+            {note}
+          </p>
+        </Reveal>
+      )}
     </div>
   </section>
 );
@@ -269,7 +286,7 @@ export const Editorial = ({ eyebrow, heading, paragraphs, image, imageAlt }) => 
   </section>
 );
 
-export const Vision = ({ eyebrow, questions, closing }) => (
+export const Vision = ({ eyebrow, questions, body, closing }) => (
   <section className="bg-burgundy py-28 sm:py-40">
     <div className="max-w-5xl mx-auto px-6 sm:px-10">
       <Reveal>
@@ -282,11 +299,21 @@ export const Vision = ({ eyebrow, questions, closing }) => (
           </p>
         </Reveal>
       ))}
-      <Reveal delay={0.3}>
-        <p className="mt-14 font-sans text-sm sm:text-base uppercase tracking-[0.25em] text-gold/80">
-          {closing}
-        </p>
-      </Reveal>
+      {body &&
+        body.map((p, i) => (
+          <Reveal key={`b-${i}`} delay={0.25 + 0.08 * i}>
+            <p className="mt-8 max-w-2xl font-sans font-light text-cream/70 text-base sm:text-lg leading-relaxed">
+              {p}
+            </p>
+          </Reveal>
+        ))}
+      {closing && (
+        <Reveal delay={0.3}>
+          <p className="mt-14 font-sans text-sm sm:text-base uppercase tracking-[0.25em] text-gold/80">
+            {closing}
+          </p>
+        </Reveal>
+      )}
     </div>
   </section>
 );

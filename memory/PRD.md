@@ -31,6 +31,7 @@ Sophisticated, editorial, sensory one-page website for independent experiential 
 - Concepts flow: home cards → wool page (senses, strategy flow, impact disclaimer) → next-concept → bard page (sequence, senses, flow) → CTA back to home #contact. Direct URL load of case pages works; mobile 375 case page verified; portrait renders in Virginia section.
 
 ## Backlog
+- P2: Bard's Banquet content replaced 2026-10-08 with user's revised copy (identity-not-a-script concept, 7-step journey, updated senses/strategy/commercial copy, final reflection + "not commissioned, not built" note). Files changed: src/data/concepts.js (bard object only) and additive optional props (body/note) in Statement and Vision blocks in src/components/concepts/blocks.jsx. Homepage, Wool page, nav, contact, backend untouched and verified.
 - P2: Service copy updated 2026-10-06 to user's exact new wording (multi-paragraph descriptions, longer Format/Timeline/Best-for statements, 9 deliverables for Experience Design incl. Conceptual Spatial Experience Plan and Specialist & Production Briefs). Only /app/frontend/src/components/HowIWork.jsx changed; design and EXPLORE interaction preserved.
 - P2: Hover-reveal images in the What I Actually Do dimensions (SPACE/SENSES/etc.) were removed 2026-07-01 at user request ("no need"); text hover effects remain. Re-add only if user asks.
 - P0: Replace remaining stock imagery with Virginia's own project photography if/when supplied (concepts use free stock per user choice).
