@@ -265,7 +265,7 @@ export const CONCEPTS = [
           },
           {
             title: "Enter the banquet",
-            text: "A candlelit gathering inspired by the social world of Shakespeare's London. Guests are welcomed and introduced by their new identities. The merchant meets the poet. The widow meets the ambitious apprentice. The actors of the company join them at the table. There is no script. No expectation to perform. Guests simply know who they are for the evening — and improvise from there. They eat. They drink. They talk. They dance. They make connections. They watch what happens. The experience is designed. The behaviour is not.",
+            text: "A candlelit gathering inspired by the social world of Shakespeare's London. Guests are welcomed and introduced by their new identities. The merchant meets the poet. The widow meets the ambitious apprentice. The actors of the company join them at the table. There is no script. No expectation to perform. Guests simply know who they are for the evening and improvise from there. They eat. They drink. They talk. They dance. They make connections. They watch what happens. The experience is designed. The behaviour is not.",
           },
           {
             title: "The world becomes social",
@@ -330,7 +330,7 @@ export const CONCEPTS = [
           {
             name: "Memory",
             tagline: "Belonging, carried home",
-            text: "The portrait becomes the physical trace. The character becomes the memory. The evening ends — but something remains.",
+            text: "The portrait becomes the physical trace. The character becomes the memory. The evening ends, but something remains.",
           },
         ],
       },
