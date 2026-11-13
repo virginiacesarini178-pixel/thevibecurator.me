@@ -1,5 +1,5 @@
 export const IMAGES = {
-  portrait: "/images/virginia.webp",
+  portrait: "/images/virginia-street.webp",
   velvet:
     "https://images.unsplash.com/photo-1513111168953-34fc252c9279?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHx2ZWx2ZXQlMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZGFyayUyMGJ1cmd1bmR5JTIwd2FybSUyMGxpZ2h0aW5nfGVufDB8fHx8MTc5MDg3MDE3M3ww&ixlib=rb-4.1.0&q=85",
   fragrance:
