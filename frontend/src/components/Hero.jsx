@@ -89,16 +89,16 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.6, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="relative hidden lg:block"
+          className="relative mt-14 lg:mt-0"
         >
           <div className="rounded-[2rem] border border-gold/20 overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.6)]">
             <img
               src="/images/hero-portrait.webp"
               alt="Virginia Cesarini, The Vibe Curator"
-              className="w-full h-[560px] object-cover object-[center_20%]"
+              className="w-full h-[380px] sm:h-[480px] lg:h-[560px] object-cover object-[center_20%]"
             />
           </div>
-          <div className="absolute -bottom-6 -left-6 backdrop-blur-xl bg-burgundy/80 border border-goldlight/15 rounded-2xl px-6 py-4 shadow-2xl">
+          <div className="absolute -bottom-6 left-4 lg:-left-6 backdrop-blur-xl bg-burgundy/80 border border-goldlight/15 rounded-2xl px-6 py-4 shadow-2xl">
             <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-gold/80">
               Act I
             </p>
