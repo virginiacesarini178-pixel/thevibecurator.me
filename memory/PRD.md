@@ -31,6 +31,7 @@ Sophisticated, editorial, sensory one-page website for independent experiential 
 - Concepts flow: home cards → wool page (senses, strategy flow, impact disclaimer) → next-concept → bard page (sequence, senses, flow) → CTA back to home #contact. Direct URL load of case pages works; mobile 375 case page verified; portrait renders in Virginia section.
 
 ## Backlog
+- P2: Mobile hero glitch fix 2026-11-13: parallax translate now applies only on lg+ (matchMedia), mobile image scrolls statically; Act I card no longer clipped by marquee (verified cardBottom == marqueeTop on mobile; desktop parallax still active).
 - P2: Hero portrait now visible on mobile too (2026-11-13, user request): removed hidden lg:block, responsive heights (380/480/560px), Act I card repositioned left-4 on mobile. Deploy was requested by user but is PAUSED awaiting explicit 50 ECU first-deploy confirmation.
 - P2: Virginia section portrait replaced 2026-11-13 with user's street photo (IMG_9297, letterbox bars cropped 924x2000 → 924x1803) saved as /app/frontend/public/images/virginia-street.webp; data/images.js portrait now points to it. Hero uses hero-portrait.webp (IMG_1388 cropped).
 - P2: Hero image replaced 2026-11-13 with Virginia's portrait (user request, IT): black letterbox bars cropped (923x2000 → 923x1384) into /app/frontend/public/images/hero-portrait.webp, object-position center 20% to keep the face framed. Velvet curtain no longer used in hero; IMAGES.velvet still exists in data/images.js if needed.

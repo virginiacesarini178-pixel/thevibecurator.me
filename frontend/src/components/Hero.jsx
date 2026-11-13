@@ -1,10 +1,18 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MaskedLine } from "./Reveal";
 import { scrollToId } from "../lib/scroll";
 
 export const Hero = () => {
   const ref = useRef(null);
+  const [isDesktop, setIsDesktop] = useState(true);
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -85,11 +93,11 @@ export const Hero = () => {
         </motion.div>
 
         <motion.div
-          style={{ y: imgY }}
+          style={{ y: isDesktop ? imgY : 0 }}
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.6, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mt-14 lg:mt-0"
+          className="relative mt-12 mb-8 lg:mt-0 lg:mb-0"
         >
           <div className="rounded-[2rem] border border-gold/20 overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.6)]">
             <img
