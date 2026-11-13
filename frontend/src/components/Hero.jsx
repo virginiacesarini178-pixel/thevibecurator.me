@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MaskedLine } from "./Reveal";
-import { IMAGES } from "../data/images";
 import { scrollToId } from "../lib/scroll";
 
 export const Hero = () => {
@@ -94,9 +93,9 @@ export const Hero = () => {
         >
           <div className="rounded-[2rem] border border-gold/20 overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.6)]">
             <img
-              src={IMAGES.velvet}
-              alt="Deep burgundy velvet in warm theatrical light"
-              className="w-full h-[560px] object-cover"
+              src="/images/hero-portrait.webp"
+              alt="Virginia Cesarini, The Vibe Curator"
+              className="w-full h-[560px] object-cover object-[center_20%]"
             />
           </div>
           <div className="absolute -bottom-6 -left-6 backdrop-blur-xl bg-burgundy/80 border border-goldlight/15 rounded-2xl px-6 py-4 shadow-2xl">
