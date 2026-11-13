@@ -2,6 +2,7 @@ import { useParams, Navigate } from "react-router-dom";
 import { getConcept, getNextConcept } from "../data/concepts";
 import {
   CaseHero,
+  Article,
   Statement,
   Principles,
   ImageBreak,
@@ -19,6 +20,7 @@ import {
 } from "../components/concepts/blocks";
 
 const BLOCKS = {
+  article: Article,
   statement: Statement,
   principles: Principles,
   image: ImageBreak,

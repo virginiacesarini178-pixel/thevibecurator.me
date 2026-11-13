@@ -1,6 +1,95 @@
 import { Link } from "react-router-dom";
 import { Reveal, Eyebrow } from "../Reveal";
 
+export const Article = ({ eyebrow, heading, paragraphs, subsections, rhythmTitle, rhythm, outro }) => (
+  <section className="bg-ink py-24 sm:py-36">
+    <div className="max-w-6xl mx-auto px-6 sm:px-10">
+      <Reveal>
+        <Eyebrow>{eyebrow}</Eyebrow>
+      </Reveal>
+      <Reveal delay={0.1}>
+        <h2 className="mt-6 font-serif font-light text-3xl sm:text-5xl text-cream max-w-3xl">
+          {heading}
+        </h2>
+      </Reveal>
+      {paragraphs &&
+        paragraphs.map((p, i) => (
+          <Reveal key={i} delay={0.15 + 0.06 * i}>
+            <p className="mt-7 max-w-2xl font-sans font-light text-cream/70 text-base sm:text-lg leading-relaxed">
+              {p}
+            </p>
+          </Reveal>
+        ))}
+
+      {subsections && (
+        <div className="mt-16">
+          {subsections.map((s, i) => (
+            <Reveal key={s.title} delay={0.04 * i}>
+              <div
+                data-testid={`article-sub-${s.title.toLowerCase().replace(/[^a-z]+/g, "-")}`}
+                className="border-t border-goldlight/15 py-12 grid md:grid-cols-[minmax(0,260px)_1fr_auto] gap-6 md:gap-12 items-start"
+              >
+                <h3 className="font-serif italic text-2xl sm:text-3xl text-goldlight">
+                  {s.title}
+                </h3>
+                <div className="max-w-2xl space-y-4">
+                  {s.paragraphs.map((p, j) => (
+                    <p key={j} className="font-sans font-light text-cream/65 leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
+                {s.image && (
+                  <div className="hidden md:block w-44 h-32 rounded-xl border border-gold/20 overflow-hidden opacity-80">
+                    <img src={s.image} alt="" className="w-full h-full object-cover" />
+                  </div>
+                )}
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      )}
+
+      {rhythm && (
+        <div className="mt-16">
+          {rhythmTitle && (
+            <Reveal>
+              <h3 className="font-serif italic text-2xl sm:text-3xl text-goldlight">
+                {rhythmTitle}
+              </h3>
+            </Reveal>
+          )}
+          <div className="mt-8">
+            {rhythm.map((r, i) => (
+              <Reveal key={r.phase} delay={0.04 * i}>
+                <div
+                  data-testid={`rhythm-${i + 1}`}
+                  className="flex flex-col sm:flex-row gap-2 sm:gap-8 border-t border-goldlight/10 py-6"
+                >
+                  <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-gold/70 sm:w-56 shrink-0 pt-1">
+                    {r.phase}
+                  </span>
+                  <p className="font-sans font-light text-cream/70 leading-relaxed max-w-2xl">
+                    {r.text}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {outro && (
+        <Reveal delay={0.15}>
+          <p className="mt-12 max-w-2xl font-sans font-light text-cream/55 text-sm leading-relaxed border-l-2 border-gold/40 pl-6">
+            {outro}
+          </p>
+        </Reveal>
+      )}
+    </div>
+  </section>
+);
+
 export const CaseHero = ({ concept }) => (
   <header className="relative bg-ink pt-36 pb-20 sm:pb-28 overflow-hidden">
     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(92,19,29,0.45),transparent_55%)]" />
@@ -33,9 +122,22 @@ export const CaseHero = ({ concept }) => (
         </p>
       </Reveal>
       <Reveal delay={0.34}>
-        <p className="mt-10 max-w-2xl font-sans font-light text-cream/70 text-base sm:text-lg leading-relaxed">
-          {concept.hero.intro}
-        </p>
+        {Array.isArray(concept.hero.intro) ? (
+          <div className="mt-10 max-w-2xl space-y-5">
+            {concept.hero.intro.map((p, i) => (
+              <p
+                key={i}
+                className="font-sans font-light text-cream/70 text-base sm:text-lg leading-relaxed"
+              >
+                {p}
+              </p>
+            ))}
+          </div>
+        ) : (
+          <p className="mt-10 max-w-2xl font-sans font-light text-cream/70 text-base sm:text-lg leading-relaxed">
+            {concept.hero.intro}
+          </p>
+        )}
       </Reveal>
       <Reveal delay={0.15} className="mt-16">
         <div className="rounded-[2rem] border border-gold/20 overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.55)]">
@@ -58,11 +160,13 @@ export const Statement = ({ eyebrow, text, body, note }) => (
           <Eyebrow>{eyebrow}</Eyebrow>
         </Reveal>
       )}
-      <Reveal delay={0.1}>
-        <p className="mt-8 font-serif italic font-light text-2xl sm:text-4xl lg:text-[2.75rem] text-cream leading-relaxed">
-          {text}
-        </p>
-      </Reveal>
+      {text && (
+        <Reveal delay={0.1}>
+          <p className="mt-8 font-serif italic font-light text-2xl sm:text-4xl lg:text-[2.75rem] text-cream leading-relaxed">
+            {text}
+          </p>
+        </Reveal>
+      )}
       {body &&
         body.map((p, i) => (
           <Reveal key={i} delay={0.18 + 0.08 * i}>
@@ -236,9 +340,19 @@ export const Sequence = ({ eyebrow, heading, steps, closing }) => (
                 <h3 className="font-display uppercase text-xl sm:text-2xl tracking-wide text-cream">
                   {s.title}
                 </h3>
-                <p className="mt-3 max-w-xl font-sans font-light text-cream/65 leading-relaxed">
-                  {s.text}
-                </p>
+                {Array.isArray(s.text) ? (
+                  <div className="mt-3 max-w-xl space-y-4">
+                    {s.text.map((p, j) => (
+                      <p key={j} className="font-sans font-light text-cream/65 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-3 max-w-xl font-sans font-light text-cream/65 leading-relaxed">
+                    {s.text}
+                  </p>
+                )}
               </div>
             </div>
           </Reveal>
@@ -453,15 +567,23 @@ export const Impact = ({ eyebrow, heading, stats, summary, disclaimer }) => (
   </section>
 );
 
-export const Opportunities = ({ eyebrow, heading, items, note }) => (
+export const Opportunities = ({ eyebrow, heading, body, items, note }) => (
   <section className="bg-espresso py-24 sm:py-32">
     <div className="max-w-6xl mx-auto px-6 sm:px-10">
       <Reveal>
         <Eyebrow>{eyebrow}</Eyebrow>
       </Reveal>
       <Reveal delay={0.1}>
-        <h2 className="mt-6 font-serif font-light text-3xl sm:text-5xl text-cream">{heading}</h2>
+        <h2 className="mt-6 font-serif font-light text-3xl sm:text-5xl text-cream max-w-3xl">{heading}</h2>
       </Reveal>
+      {body &&
+        body.map((p, i) => (
+          <Reveal key={i} delay={0.15 + 0.06 * i}>
+            <p className="mt-7 max-w-2xl font-sans font-light text-cream/70 text-base sm:text-lg leading-relaxed">
+              {p}
+            </p>
+          </Reveal>
+        ))}
       <Reveal delay={0.2}>
         <div className="mt-12 flex flex-wrap gap-3">
           {items.map((o) => (
@@ -521,8 +643,7 @@ export const NextConcept = ({ next }) => (
   </section>
 );
 
-export const ConceptCTA = () => (
-  <section className="bg-burgundy py-24 sm:py-32">
+export const ConceptCTA = () => (  <section className="bg-burgundy py-24 sm:py-32">
     <div className="max-w-3xl mx-auto px-6 sm:px-10 text-center">
       <Reveal>
         <h2 className="font-display uppercase text-3xl sm:text-5xl tracking-wide text-cream leading-tight">
